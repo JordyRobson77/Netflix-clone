@@ -1,0 +1,25 @@
+@import "~swiper/swiper";
+@import "~swiper/components/navigation/navigation";
+h2{
+    font-size: x-large;
+    color: white;
+}
+
+.movie__images {
+    div.thumbnails .carousel {
+      width:100%;
+      display: flex;
+    }
+  }
+
+.swiper-item {
+    transition: all 0.3s ease;
+}
+
+.swiper-item:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+.headline:hover{
+  cursor: pointer;
+}

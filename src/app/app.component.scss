@@ -1,0 +1,35 @@
+@import '~swiper/swiper-bundle';
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    a {
+        display: inline-block;
+        width: fit-content;
+        text-decoration: none;
+        cursor: pointer;
+        color: #a4a4a4;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        transition: all 0.2 ease;
+
+        &:hover {
+            color: #696969;
+        }
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}

@@ -1,0 +1,34 @@
+<div class="header">
+
+    <div class="header__main" id="stickyHeader" [class.sticky]="sticky" #stickHeader>
+
+        <div class="header__left">
+            <a routerLink= "/">
+                <img src="assets/Netflix/netflix.svg" alt="logo">
+            </a>
+        
+            <ul>
+                <li><a routerLink="/trending" routerLInkActive="active">Trending</a></li>
+                <li><a routerLink="/top-rated" routerLInkActive="active">Top rated</a></li>
+                <li><a routerLink="/now-playing" routerLInkActive="active">Now playing</a></li>
+                <li><a routerLink="/originals" routerLInkActive="active">Originals</a></li>
+            </ul>
+        </div>
+
+        <div class="header__right">
+            <ul>
+                <li>
+                    <input type="text" class="search" [formControl]="searchControl">
+                    <a (click)="search()"><mat-icon>search</mat-icon></a>
+                </li>
+                <li><a href="#"><mat-icon>card_giftcard</mat-icon></a></li>
+                <li><a href="#"><mat-icon>notifications</mat-icon></a></li>
+                <li>
+                  <img src="assets/pdp.jpg" alt="avatar" class="avatar">
+                </li>
+              </ul>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,14 @@
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:3rem;
+}
+.movie-container{
+    margin: 1rem;
+    transition: all 0.3s ease;
+    
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.02);
+    }
+}

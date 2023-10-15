@@ -1,0 +1,36 @@
+<div class="header__banner"
+      [ngStyle] = "{
+        'background-image' : 'linear-gradient( rgba(0,0,0,0.8) , rgba(0,0,0,0.3) ), url('+headerBGUrl+')'
+      }"
+    >
+      <h2>{{data.title}}</h2>
+      <h3>{{data.tagline}}</h3>
+
+    <div class="header__buttons">
+
+        <button class="play-button">
+          <mat-icon>arrow_right</mat-icon> 
+          <span>Play</span>    
+        </button>
+
+    </div>
+
+</div> 
+
+<div class="body" style="margin-top: 25rem;">
+
+    <h3>OVERVIEW</h3>
+    <p>{{data.overview}}</p>
+
+</div>
+
+<div class="details">
+    <div class="headlines">
+        <p><b>Release date:</b> {{data.release_date}}</p>
+        <p><b>runtime:</b> {{data.runtime}}</p>
+        <p><b>original_language:</b> {{data.original_language}}</p>
+        <p><b>vote average:</b> {{data.vote_average}}</p>
+        <p><b>genre:</b> {{data.genres[0].name}}</p>
+    </div>
+    
+</div>

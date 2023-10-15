@@ -1,0 +1,8 @@
+<div class="body">
+    <div class="movie-container" *ngFor="let m of movieData.results; let i=index" >
+        <img  src="https://image.tmdb.org/t/p/w200{{m?.poster_path}}" 
+        alt="logo" 
+        class="movie-img"
+        [routerLink]="['/movie-details',m.id]">
+    </div>
+</div>

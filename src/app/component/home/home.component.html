@@ -1,0 +1,32 @@
+<div class="header__banner"
+      [ngStyle] = "{
+        'background-image' : 'linear-gradient( rgba(0,0,0,0.8) , rgba(0,0,0,0.3) ), url('+headerBGUrl+')'
+      }"
+    >
+      <h2>{{trending!.results![0].title}}</h2>
+
+      <div class="header__buttons">
+
+        <button class="play-button">
+          <mat-icon>arrow_right</mat-icon> 
+          <span>Play</span>    
+        </button>
+
+        <button class="more-button" [routerLink]="['movie-details', this.trending.results[0].id]">
+          <mat-icon>info</mat-icon>
+          <span>More Info</span>
+        </button>
+
+      </div>
+
+</div> 
+
+<div class="body" style="margin-top:32rem">
+
+    <app-home-slider title="TRENDING" [movies]="trending"></app-home-slider>
+    <app-home-slider title="TOP RATED" [movies]="topRated"></app-home-slider>
+    <app-home-slider title="NOW PLAYING" [movies]="nowPlaying"></app-home-slider>
+    <app-home-slider title="ORIGINALS" [movies]="originals"></app-home-slider>
+    <app-home-slider title="POPULAR" [movies]="popular"></app-home-slider>
+    
+</div>
